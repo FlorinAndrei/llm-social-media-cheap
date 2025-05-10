@@ -41,7 +41,7 @@ But any dataset will work, as long as it's big enough, and you put it in a file 
 
 # Training
 
-The `training-llama3.ipynb` and `training-gemma3.ipynb` notebooks do all the training. The Medium article explains the notebooks in detail. Use `run-training.sh` to invoke the training notebooks with the proper context, and also to run them detached, in a Screen session, which will allow you to invoke trainign remotely, over an ssh session - you do not need to be logged in and running Jupyter in the local desktop to do training.
+The `training-llama3.ipynb` and `training-gemma3.ipynb` notebooks do all the training. The Medium article explains the notebooks in detail. Use `run-training.sh` to invoke the training notebooks with the proper context, and also to run them detached, in a Screen session, which will allow you to invoke training remotely, over an ssh session - you do not need to be logged in and running Jupyter on the local desktop to do training.
 
 The `visualize-training.ipynb` notebook will show a few model metrics. You can run it after training is done.
 
