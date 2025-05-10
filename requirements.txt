@@ -1,0 +1,29 @@
+# run install_modules.sh to install these modules
+
+# main
+unsloth==2025.3.19
+unsloth_zoo==2025.3.17
+transformers==4.50.3
+datasets==3.5.0
+vllm==0.7.3
+
+# https://github.com/triton-lang/triton/issues/5919
+triton==3.1.0
+torch==2.5.1
+
+# Jupyter & Co
+ipykernel
+ipython
+jupyter_client
+jupyter_core
+ipywidgets
+nbconvert
+matplotlib
+plotly
+kaleido
+tqdm
+black
+scipy
+tensorboard
+tbparse
+praw

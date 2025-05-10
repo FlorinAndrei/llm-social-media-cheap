@@ -1,0 +1,11 @@
+llama.cpp
+model_*
+outputs
+unsloth_compiled_cache
+unsloth_zoo
+_unsloth_*
+.venv
+*.log
+*.csv
+.specstory
+.cursorindexingignore

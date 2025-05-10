@@ -1,0 +1,28 @@
+diff -u unsloth_zoo.orig/llama_cpp.py unsloth_zoo/llama_cpp.py
+--- unsloth_zoo.orig/llama_cpp.py	2025-03-14 08:02:07.000000000 -0700
++++ unsloth_zoo/llama_cpp.py	2025-04-24 15:31:20.129628636 -0700
+@@ -32,8 +32,7 @@
+ import contextlib
+ import os
+ 
+-LLAMA_CPP_CONVERT_FILE = \
+-    "https://github.com/ggerganov/llama.cpp/raw/refs/heads/master/convert_hf_to_gguf.py"
++LLAMA_CPP_CONVERT_FILE = "llama.cpp/convert_hf_to_gguf.py"
+ 
+ COMMANDS_NOT_FOUND = (
+     "command not found",
+@@ -348,11 +347,12 @@
+     # All Unsloth Zoo code licensed under LGPLv3
+     # Downloads from llama.cpp's Github repo
+     try:
+-        converter_latest = requests.get(LLAMA_CPP_CONVERT_FILE).content
++        with open(LLAMA_CPP_CONVERT_FILE, 'rb') as f:
++            converter_latest = f.read()
+     except:
+         raise RuntimeError(
+             f"Unsloth: Could not obtain `{LLAMA_CPP_CONVERT_FILE}`.\n"\
+-            f"Maybe you don't have internet ocnnection?"
++            f"Is llama.cpp installed?"
+         )
+ 
+     # Get all supported models
