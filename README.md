@@ -3,7 +3,7 @@ LLMs fine-tuned with social media comments on consumer hardware
 
 There is a companion article for this repo on Medium, read it:
 
-(link TBD, I will add it when the article gets published)
+https://medium.com/data-science-collective/train-llms-to-talk-like-you-on-social-media-using-consumer-hardware-c88750a56e6d
 
 The goal is to fine-tune LLMs with dozens of billions of weights on hardware you may already have, such as a good gaming PC. The only real constraint is the size of the GPU VRAM: the bigger, the better. I used an RTX 3090, which has 24 GB of VRAM.
 
